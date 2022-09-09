@@ -23,3 +23,7 @@ it('with a phrase', () => {
 it('in Upper Case', () => {
     expect(caesarCipher('Hola!', 3)).toBe('krod!')
 })
+
+it('long number input', () => {
+    expect(caesarCipher('Hola, todo bien?', 25)).toBe('gnkz, sncn ahdm?')
+})
