@@ -5,7 +5,7 @@ const caesarCipher = function(el, number){
         let arr = []; 
         let letter = el.toLowerCase()
 
-         if(el.length > 1){
+         if(letter.length > 1){
             let i = 0; 
             let wordLength = letter.length;
             while(i <= wordLength - 1){ 
@@ -13,7 +13,7 @@ const caesarCipher = function(el, number){
             i++
             }
         } 
-        else if(alphabet.indexOf(letter) == -1) return el; 
+        else if(alphabet.indexOf(letter) === -1) return el; 
         else if(alphabet.indexOf(letter) + number >= 26) return alphabet[(alphabet.indexOf(letter) + number) - 26]; 
 
 
